@@ -120,6 +120,24 @@ export default function Footer() {
                 className="h-12 w-auto"
               />
             </a>
+            <a href="https://www.gambleaware.org/" target="_blank" rel="noopener noreferrer">
+              <Image
+                src="/gamble.webp"
+                alt="GambleAware"
+                width={100}
+                height={35}
+                className="h-12 w-auto"
+              />
+            </a>
+            <a href="https://www.gamcare.org.uk/" target="_blank" rel="noopener noreferrer">
+              <Image
+                src="/gamecare.svg"
+                alt="GameCare"
+                width={100}
+                height={35}
+                className="h-12 w-auto"
+              />
+            </a>
           </div>
           <div className="text-center md:text-right">
             <p className="text-sm text-gray-500">18+ | Spil ansvarligt | ROFUS | StopSpillet</p>
