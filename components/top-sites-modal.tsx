@@ -65,8 +65,8 @@ export default function TopSitesModal({ isOpen, onClose, sites }: TopSitesModalP
                         <Image
                           src={site.logo || "/placeholder.svg"}
                           alt={site.name}
-                          width={60}
-                          height={30}
+                          width={100}
+                          height={60}
                           className="h-6 w-auto object-contain"
                         />
                         <h3 className="font-bold text-sm">{site.name}</h3>
@@ -111,9 +111,9 @@ export default function TopSitesModal({ isOpen, onClose, sites }: TopSitesModalP
                         <Image
                           src={site.logo || "/placeholder.svg"}
                           alt={site.name}
-                          width={80}
-                          height={40}
-                          className="h-8 lg:h-10 w-auto object-contain mb-1"
+                          width={120}
+                          height={96}
+                          className="h-16 lg:h-12 w-auto object-contain mb-1"
                         />
                         <h3 className="font-bold text-sm lg:text-base text-center">{site.name}</h3>
                       </div>

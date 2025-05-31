@@ -12,10 +12,10 @@ interface BettingSitesListProps {
 
 export default function BettingSitesList({ sites }: BettingSitesListProps) {
   return (
-    <section className="py-0 pt-2">
+    <section className="py-4 pt-6 sm:pt-2">
       <div className="container mx-auto px-4">
         <div className="space-y-0">
-          <div className="bg-black text-white p-4 animate-fade-in">
+          <div className="bg-black text-white p-4 animate-fade-in hidden sm:block">
             <div className="grid grid-cols-5 gap-4 font-bold text-center">
               <div>BOOKMAKERE</div>
               <div>BONUS</div>
@@ -35,18 +35,17 @@ export default function BettingSitesList({ sites }: BettingSitesListProps) {
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <div
-                className={`grid grid-cols-1 sm:grid-cols-5 gap-2 sm:gap-4 items-center p-4 border-b relative transition-all duration-300 ${
-                  index === 0 ? "bg-gradient-to-r from-yellow-50 to-white ring-2 ring-yellow-400" : "bg-white"
-                }`}
+                className={`grid grid-cols-1 sm:grid-cols-5 gap-2 sm:gap-4 items-center p-4 border-b relative transition-all duration-300 ${index === 0 ? "bg-gradient-to-r from-yellow-50 to-white ring-2 ring-yellow-400" : "bg-white"
+                  }`}
               >
                 {/* Bookmaker Column */}
                 <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-3">
                   {index === 0 && (
-                    <div className="absolute top-0 left-0 bg-red-600 text-white px-2 py-1 text-xs font-bold animate-pulse-glow">
+                    <div className="absolute -top-1 left-1 sm:top-0 sm:left-0 bg-red-600 text-white px-1 py-0.5 sm:px-2 sm:py-1 text-xs font-bold animate-pulse-glow rounded-sm">
                       TOP MÆRKE
                     </div>
                   )}
-                  <div className="flex flex-row gap-4 items-center logo-container">
+                  <div className="flex flex-col items-center logo-container">
                     <Image
                       src={site.logo || "/placeholder.svg"}
                       alt={site.name}

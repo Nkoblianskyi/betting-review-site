@@ -34,36 +34,36 @@ export default function Hero() {
   }
 
   return (
-    <section className="py-2 sm:py-4 text-center text-white max-h-[250px] sm:max-h-[300px] overflow-visible">
-      <div className="container mx-auto px-4">
-        <div className="bg-white/20 backdrop-blur-md rounded-lg p-2 sm:p-4 mb-2 sm:mb-3 animate-hero-content">
-          <div className="text-xs sm:text-sm text-white mb-1 animate-date-fade">Opdateret: {currentDate}</div>
-          <h1 className="text-lg sm:text-3xl font-bold mb-1 sm:mb-2 text-gray-900 animate-title-glow">
+    <section className="py-2 sm:py-4 text-center text-white min-h-[50px] sm:min-h-[250px] md:max-h-[300px] overflow-visible">
+      <div className="container mx-auto px-1 sm:px-4">
+        <div className="bg-white/20 backdrop-blur-md rounded-lg p-3 sm:p-4 md:p-6 mb-2 sm:mb-3 animate-hero-content">
+          <div className="text-xs sm:text-sm text-white mb-2 animate-date-fade">Opdateret: {currentDate}</div>
+          <h1 className="text-base sm:text-2xl md:text-3xl font-bold mb-2 sm:mb-3 text-gray-900 animate-title-glow leading-tight">
             Danmarks Bedste Betting Sider
           </h1>
-          <p className="text-xs sm:text-base text-black mb-1 sm:mb-2 animate-text-reveal">
+          <p className="text-xs sm:text-sm md:text-base text-white-800 mb-2 sm:mb-3 animate-text-reveal leading-relaxed">
             Velkommen til dkbettingsider - Danmarks mest pålidelige guide til online betting! Vores ekspertteam har
             grundigt testet og anmeldt alle de bedste betting-sider, der er tilgængelige for danske spillere. Vi
             fokuserer på sikkerhed, bonusser, odds, brugeroplevelse og kundeservice for at give dig den mest præcise
             vurdering.
           </p>
-          <p className="text-xs sm:text-sm text-white animate-text-reveal-delayed">
+          <p className="text-xs sm:text-sm text-black animate-text-reveal-delayed leading-relaxed">
             Alle anbefalede bookmakere har gyldig dansk licens fra Spillemyndigheden og overholder danske spillelove. Vi
             opdaterer løbende vores anmeldelser for at sikre, at du altid får den nyeste information.
           </p>
         </div>
-        <div className="bg-gray-900/80 backdrop-blur-md rounded-lg p-2 sm:p-4 mt-2 animate-rules-bar">
-          <div className="flex flex-wrap justify-center items-center gap-1 sm:gap-2 md:gap-4 text-xs px-1 sm:px-2">
+        <div className="bg-gray-900/80 backdrop-blur-md rounded-lg p-1 sm:p-3 md:p-4 mt-1 sm:mt-3 animate-rules-bar">
+          <div className="flex justify-center items-center gap-1 sm:gap-2 md:gap-4 text-2xs sm:text-xs md:text-sm px-1 sm:px-2">
             <button
               onClick={() => openModal("gamalyze")}
-              className="text-white hover:text-yellow-400 transition-all duration-300 hover:scale-105 animate-rule-button"
+              className="text-white hover:text-yellow-400 transition-all duration-300 hover:scale-105 animate-rule-button text-center py-0.5 px-1 sm:py-1 sm:px-2 rounded"
             >
               Test dig selv med Gamalyze
             </button>
             <span className="text-gray-400">|</span>
             <button
               onClick={() => openModal("age")}
-              className="text-white hover:text-yellow-400 transition-all duration-300 hover:scale-105 animate-rule-button"
+              className="text-white hover:text-yellow-400 transition-all duration-300 hover:scale-105 animate-rule-button text-center py-0.5 px-1 sm:py-1 sm:px-2 rounded"
               style={{ animationDelay: "0.2s" }}
             >
               18+ | Spil ansvarligt!
@@ -71,7 +71,7 @@ export default function Hero() {
             <span className="text-gray-400">|</span>
             <button
               onClick={() => openModal("terms")}
-              className="text-white hover:text-yellow-400 transition-all duration-300 hover:scale-105 animate-rule-button"
+              className="text-white hover:text-yellow-400 transition-all duration-300 hover:scale-105 animate-rule-button text-center py-0.5 px-1 sm:py-1 sm:px-2 rounded"
               style={{ animationDelay: "0.4s" }}
             >
               Regler og vilkår gælder
@@ -196,6 +196,12 @@ export default function Hero() {
         /* Active states */
         .animate-rule-button:active {
           transform: scale(0.95);
+        }
+        
+        /* Extra small text size for very small screens */
+        .text-2xs {
+          font-size: 0.65rem;
+          line-height: 1rem;
         }
       `}</style>
     </section>

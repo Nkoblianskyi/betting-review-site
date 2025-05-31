@@ -4,7 +4,7 @@ export const bettingSites: BettingSite[] = [
   {
     id: "1",
     name: "Campobet",
-    logo: "/campo.webp",
+    logo: "/campobet.png",
     url: "https://campobet.dk/dk/sport",
     bonus: "100% Bonus Op Til 1000 Kr",
     rating: 9.9,
