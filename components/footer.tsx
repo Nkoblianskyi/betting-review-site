@@ -19,16 +19,6 @@ export default function Footer() {
                   Privatlivspolitik
                 </Link>
               </li>
-              <li>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Vilkår og Betingelser
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-                  Sikker Betting Guide
-                </Link>
-              </li>
             </ul>
           </div>
 
