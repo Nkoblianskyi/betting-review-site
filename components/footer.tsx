@@ -87,8 +87,8 @@ export default function Footer() {
               <Image
                 src="/ludomani.png"
                 alt="Spillemyndigheden"
-                width={100}
-                height={35}
+                width={90}
+                height={60}
                 className="h-12 w-auto"
               />
             </a>
@@ -96,8 +96,8 @@ export default function Footer() {
               <Image
                 src="/stopspillet.png"
                 alt="StopSpillet"
-                width={100}
-                height={35}
+                width={90}
+                height={60}
                 className="h-12 w-auto"
               />
             </a>
@@ -105,8 +105,8 @@ export default function Footer() {
               <Image
                 src="/rofus.png"
                 alt="ROFUS"
-                width={100}
-                height={35}
+                width={90}
+                height={60}
                 className="h-12 w-auto"
               />
             </a>
@@ -114,8 +114,8 @@ export default function Footer() {
               <Image
                 src="/gamble.webp"
                 alt="GambleAware"
-                width={100}
-                height={35}
+                width={90}
+                height={60}
                 className="h-12 w-auto"
               />
             </a>
@@ -123,8 +123,8 @@ export default function Footer() {
               <Image
                 src="/gamecare.svg"
                 alt="GameCare"
-                width={100}
-                height={35}
+                width={90}
+                height={60}
                 className="h-12 w-auto"
               />
             </a>
